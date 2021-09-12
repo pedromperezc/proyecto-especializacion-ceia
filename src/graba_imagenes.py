@@ -8,6 +8,8 @@ for i in range(100):
         roi = Roi("datasets/Labels/" + imagen + ".roi")
         contorno = roi.get_contorno()
         img = cv.imread("datasets/Images/" + imagen + ".tif")
+
+
         cv.imwrite(imagen + ".tif", img)
         #cv.drawContours(img, contorno, -1, (0, 255, 0), 7)
         #cv.imwrite(imagen + ".png", img)
