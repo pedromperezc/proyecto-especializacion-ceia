@@ -2,7 +2,7 @@ from src.read_roid import Roi
 import cv2 as cv
 import os
 
-os.chdir("datasets/pre_procesadas")
+os.chdir("datasets/procesadas")
 dir = os.getcwd()
 
 for subdir, dirs, files in os.walk(dir):
